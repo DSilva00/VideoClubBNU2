@@ -11,13 +11,11 @@ namespace VideoClub.Models
     {
         public int PaymentId { get; set; }
 
-        public int CardNumber { get; set; }
+        public long CardNumber { get; set; }
 
-        [StringLength(10)]
         [Required]
-        public string CardType{ get; set; }
+        public CardTypes CardType { get; set; }
 
-        [StringLength(30)]
         [Required]
         public string CardName { get; set; }
 
@@ -34,7 +32,12 @@ namespace VideoClub.Models
 
         //Tentei dar run no programa para ver se compila, e digam alguma coisa sff
 
-
+        public enum CardTypes
+        {
+            MasterCard,
+            Visa,
+            AmericanExpress
+        }
 
     }
 }

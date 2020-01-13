@@ -14,5 +14,9 @@ namespace VideoClub.Data
         {
         }
         public DbSet<Person> Person { get; set; }
+
+        public DbSet<Payment> Payments { get; set; }
+
+        public DbSet<Address> Addresses { get; set; }
     }
 }
