@@ -13,6 +13,6 @@ namespace VideoClub.Data
             : base(options)
         {
         }
-        public DbSet<VideoClub.Models.Person> Person { get; set; }
+        public DbSet<Person> Person { get; set; }
     }
 }

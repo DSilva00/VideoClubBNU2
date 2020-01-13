@@ -31,7 +31,7 @@ namespace VideoClub.Models
 
         //Navigation
 
-        public virtual Person PersonID{get;set;}
+        //public virtual Person PersonID{get;set;}
 
     }
 

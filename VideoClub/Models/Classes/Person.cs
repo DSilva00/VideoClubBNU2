@@ -25,6 +25,10 @@ namespace VideoClub.Models
 
         public Genders Gender { get; set; }
 
+        public int AddressID {get;set;}
+
+        public int PaymentCardID { get; set; }
+
         // Navigation
 
         public virtual Address Address { get; set; }
